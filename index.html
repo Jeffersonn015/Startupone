@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sistema de Gestão de Chamados — Santander</title>
+  <meta name="description" content="Landing page do Sistema de Gestão de Chamados — simplicidade, acessibilidade e agilidade para suportar processos internos.">
+  <style>
+  
+    :root{
+      --red:#e30613; 
+      --black:#0b0b0b;
+      --white:#ffffff;
+      --muted:#f5f5f5;
+      --max-width:1100px;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--white),var(--muted));color:var(--black);-webkit-font-smoothing:antialiased}
+    .container{max-width:var(--max-width);margin:40px auto;padding:24px}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:54px;height:54px;border-radius:10px;background:var(--red);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(227,6,19,0.14)}
+    .logo svg{width:34px;height:34px;fill:var(--white)}
+    h1.site-title{font-size:1.125rem;margin:0}
+    .nav{display:flex;gap:12px}
+    .btn{background:var(--black);color:var(--white);padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn.ghost{background:transparent;color:var(--red);border:2px solid var(--red)}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;margin-top:36px}
+    .card{background:var(--white);border-radius:var(--radius);padding:28px;box-shadow:0 8px 30px rgba(11,11,11,0.06)}
+    .eyebrow{display:inline-block;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,rgba(227,6,19,0.12),rgba(227,6,19,0.06));color:var(--red);font-weight:700;margin-bottom:12px}
+    h2{margin:0 0 12px 0;font-size:1.6rem}
+    p.lead{color:#333;line-height:1.5}
+
+    .features{display:flex;gap:14px;margin-top:18px}
+    .feature{flex:1;padding:14px;border-radius:10px;background:linear-gradient(180deg,var(--muted),#fff);min-height:90px}
+    .feature h4{margin:0 0 6px 0}
+    .cta{margin-top:18px}
+
+    form{display:flex;flex-direction:column;gap:10px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6e6e6;font-size:0.975rem}
+    .row{display:flex;gap:10px}
+    .row > *{flex:1}
+
+    .right-hero{display:flex;flex-direction:column;gap:12px}
+    .stats{display:flex;gap:10px}
+    .stat{flex:1;background:linear-gradient(180deg,#fff,var(--muted));padding:12px;border-radius:10px;text-align:center}
+    .stat strong{display:block;font-size:1.4rem}
+
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}
+    .history p{line-height:1.6}
+    .testimonials{display:flex;flex-direction:column;gap:12px}
+    .testimonial{background:#0b0b0b;color:var(--white);padding:14px;border-radius:10px}
+    .testimonial small{opacity:0.8}
+
+    footer{margin-top:28px;padding:18px 12px;text-align:center;font-size:0.95rem;color:#555}
+
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .split{grid-template-columns:1fr}
+      .nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 2l9 4v2H3V6l9-4zM4 10h16v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8z"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="site-title">Sistema de Gestão de Chamados</h1>
+          <div style="font-size:0.85rem;color:#777">Santander — simplicidade que gera resultados</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="btn ghost" href="#sobre">Sobre</a>
+        <a class="btn ghost" href="#depoimentos">Depoimentos</a>
+        <a class="btn" href="#contato">Entrar</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="card">
+          <span class="eyebrow">Novo · Projeto Interno</span>
+          <h2>Organize, priorize e resolva chamados com agilidade</h2>
+          <p class="lead">Uma solução pensada para a realidade do banco: interface limpa, acesso fácil e controle completo das solicitações. Reduza o tempo de atendimento e melhore a satisfação interna.</p>
+
+          <div class="features" aria-hidden="false">
+            <div class="feature">
+              <h4>Simples & Intuitivo</h4>
+              <div>Controle visual dos chamados e fluxos rápidos para abertura e acompanhamento.</div>
+            </div>
+            <div class="feature">
+              <h4>Priorize</h4>
+              <div>Classifique por criticidade e direcione automaticamente para as equipes certas.</div>
+            </div>
+            <div class="feature">
+              <h4>Relatórios</h4>
+              <div>Métricas claras para acompanhar SLA e desempenho das áreas.</div>
+            </div>
+          </div>
+
+          <div class="cta">
+            <form id="demoForm" onsubmit="event.preventDefault(); alert('Obrigado! Em breve alguém entrará em contato.');">
+              <div class="row">
+                <input type="text" placeholder="Seu nome completo" required>
+                <input type="email" placeholder="Seu e-mail institucional" required>
+              </div>
+              <input type="text" placeholder="Assunto do chamado (ex: Acesso ao sistema)" required>
+              <button class="btn" type="submit">Solicitar demonstração</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <aside class="right-hero">
+        <div class="card stats" aria-hidden="false">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-size:0.95rem;color:#666">Chamados hoje</div>
+              <strong>128</strong>
+            </div>
+            <div style="text-align:right">
+              <div style="font-size:0.95rem;color:#666">Tempo médio</div>
+              <strong>1h 26m</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 style="margin-top:0">Vantagens rápidas</h4>
+          <ul style="margin:8px 0 0 18px;color:#333">
+            <li>Interface responsiva para desktops e tablets</li>
+            <li>Histórico de interações por chamado</li>
+            <li>Notificações e integração com e-mails</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section id="sobre" class="split">
+      <div class="card history">
+        <h3>Descrição do projeto</h3>
+        <p><strong>Objetivo:</strong> desenvolver um sistema de chamados caracterizado pela simplicidade, acessibilidade e facilidade de uso. A ferramenta permite abrir, visualizar e gerenciar chamados de maneira eficiente, promovendo maior agilidade na resolução de problemas e contribuindo para a melhoria dos processos internos.</p>
+        <p>Espera-se otimizar a comunicação entre usuários e equipes de suporte, reduzir falhas decorrentes de controles manuais e aumentar a eficácia organizacional — impactando positivamente a produtividade e a qualidade do serviço entregue ao cliente final.</p>
+
+        <h3 style="margin-top:16px">Um pouco da história do banco</h3>
+        <p>O Grupo Santander tem origem na cidade de Santander, na Espanha, e conta com uma história centenária no setor bancário. Ao longo das décadas, o banco expandiu internacionalmente, chegando ao Brasil e consolidando-se como um dos maiores bancos privados do país. A tradição de inovação e foco no cliente faz do Santander um ambiente apropriado para soluções que melhorem a operação interna e a experiência do usuário.</p>
+      </div>
+
+      <div class="card" id="depoimentos">
+        <h3>Depoimentos</h3>
+        <div class="testimonials">
+          <div class="testimonial">
+            <strong>"Ferramenta prática e rápida — fácil de aprender."</strong>
+            <br><small>— Gerente de TI, Agência SP</small>
+          </div>
+          <div class="testimonial">
+            <strong>"Reduzimos o tempo de resolução em 32% desde a adoção."</strong>
+            <br><small>— Coordenadora de Suporte</small>
+          </div>
+          <div class="testimonial" style="background:linear-gradient(90deg,var(--red),#b50d11)">
+            <strong>"Interface limpa e intuitiva. Ótima experiência para o time."</strong>
+            <br><small>— Analista de Operações</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contato">
+      <div style="max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:10px;align-items:center">
+        <div style="font-weight:700">Quer testar o sistema?</div>
+        <div style="font-size:0.95rem;color:#666;">Entre em contato com a equipe de projetos internos para agendar uma demonstração.</div>
+        <div style="display:flex;gap:10px;margin-top:6px">
+          <a class="btn" href="#" onclick="event.preventDefault();alert('Obrigado! Em breve alguém entrará em contato.');">Solicitar demonstração</a>
+          <a class="btn ghost" href="#" onclick="event.preventDefault();alert('Baixando PDF (simulação)...');">Baixar resumo do projeto</a>
+        </div>
+      </div>
+      <div style="margin-top:14px;color:#999">© Santander — Sistema de Gestão de Chamados · Projeto de melhoria interna</div>
+    </footer>
+
+    <script>
+      document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));
+    </script>
+  </div>
+</body>
+</html>
